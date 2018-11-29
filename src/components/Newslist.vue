@@ -54,10 +54,6 @@ export default {
 </script>
 
 <style scoped>
-    .media-img{
-        margin-left: 50%;
-        transform: translateX(-20%);
-    }
     .media-object{
         height: 140px;
         padding: 5px;
