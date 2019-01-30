@@ -3,14 +3,14 @@
         <div class="container">
             <ul class="media-list">
                 <li class="media" v-for="article in articles" :key="article">
-                    <div class="col-sm-12 col-md-4 col-lg-3 media-img">
-                        <div class="media-left">
+                    <div class="col-sm-4 col-lg-3 media-img">
+                        <div class="media-center">
                             <a v-bind:href="article.url" target="_blank">
                                 <img class="media-object img-responsive" v-bind:src="article.urlToImage">
                             </a>
                         </div>
                         </div>
-                        <div class="col-sm-12 col-md-8 col-lg-9">
+                        <div class="col-sm-8 col-lg-9">
                         <div class="media-body">
                             <h4 class="media-heading">
                                 <a v-bind:href="article.url" target="_blank">{{article.title}}</a>
@@ -54,6 +54,9 @@ export default {
 </script>
 
 <style scoped>
+    img{
+        margin: auto;
+    }
     .media-object{
         height: 140px;
         padding: 5px;

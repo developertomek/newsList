@@ -1,7 +1,6 @@
 <template>
     <div class="sourceselection">
         <div class="jumbotron">
-
             <h1><span class="glyphicon glyphicon-list-alt"></span> News List</h1>
             <br><h5>Select News source</h5>
             <select class="form-control" v-on:change="sourceChanged">
