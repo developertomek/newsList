@@ -43,7 +43,7 @@ export default {
         }
     },
     created: function () {
-        rhis.updateSource(this.source);
+        this.updateSource(this.source);
     },
     watch: {
         source: function (val) {

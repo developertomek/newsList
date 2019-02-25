@@ -4,9 +4,9 @@
             <h1><span class="glyphicon glyphicon-list-alt"></span> News List</h1>
             <br><h5>Select News source</h5>
             <select class="form-control" v-on:change="sourceChanged">
-                <option v-bind:value="source.id" v-for="source in sources">{{source.name}}</option>
+                <option v-bind:value="source.id" v-for="source in sources" :key="source.name">{{source.name}}</option>
             </select>
-
+            
             <div v-if="source">
                 <br><h6 class="text-justify">{{source.description}}</h6><br>
                 <a v-bind:href="source.url" class="btn btn-primary" target="_blank">Go To {{source.name}} Website</a>
