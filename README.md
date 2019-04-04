@@ -1,4 +1,4 @@
-# firstvueapp
+# News List App
 
 > A Vue.js project
 
